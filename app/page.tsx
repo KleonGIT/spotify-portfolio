@@ -56,7 +56,7 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-2">Title of Your Latest Blog Post</h3>
             <p className="text-gray-300">
               A short excerpt from your latest blog post. This could be about a recent project, a technology you've been
-              learning, or your thoughts on web development trends.
+              learning, or your thoughts on web development trends!
             </p>
           </div>
         </motion.div>
