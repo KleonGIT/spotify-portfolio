@@ -12,32 +12,29 @@ export default function Contact() {
   })
   const [showSuccess, setShowSuccess] = useState(false)
 
-  const handleChange = (e) => {
-    const { id, value } = e.target
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [id]: value,
-    }))
-  }
+    }));
+  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    emailjs.send(
-      "service_dq9fcnj",
-      "template_gp5grt6",
-      formData,
-      "7WKOiBwd-nRkXdiyQ"
-    ).then(
+  emailjs
+    .send("service_dq9fcnj", "template_gp5grt6", formData, "7WKOiBwd-nRkXdiyQ")
+    .then(
       (result) => {
-        setShowSuccess(true)
-        setTimeout(() => setShowSuccess(false), 3000) // Hide success message after 3 seconds
+        setShowSuccess(true);
+        setTimeout(() => setShowSuccess(false), 3000); // Hide success message after 3 seconds
       },
       (error) => {
-        alert("Failed to send message, please try again.")
+        alert("Failed to send message, please try again.");
       }
-    )
-  }
+    );
+};
 
   const formControls = {
     initial: { opacity: 0, y: 50 },
