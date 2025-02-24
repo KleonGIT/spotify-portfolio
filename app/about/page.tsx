@@ -41,13 +41,11 @@ export default function About() {
           className="space-y-4"
         >
           <p className="text-gray-300">It&apos;s
-            Hello! I'm Kleon, a passionate web developer with a love for creating beautiful and functional
+            Hello! I'm Kleon, a web developer with a love for creating beautiful and functional
             websites. With 2 years of experience in the field, I specialize in Web Development.
           </p>
           <p className="text-gray-300">It&apos;s
-            When I'm not coding, you can find me [Your Hobbies or Interests, e.g., exploring new coffee shops, hiking in
-            the mountains, or playing the guitar]. I believe in continuous learning and always strive to stay up-to-date
-            with the latest web technologies and best practices.
+            When I'm not coding, you can find me on kick.com/ieulsph. I believe the best way to code is after you feel like shit losing 13-12 in a match :)
           </p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
