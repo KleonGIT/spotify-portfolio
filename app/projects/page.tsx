@@ -5,24 +5,24 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1 and the technologies used.",
-    image: "/placeholder.svg?height=200&width=300",
+    title: "SITC-GMS",
+    description: "A Grade Management System for St. Ignatius Technical College.",
+    image: "/images/SITC-GMS.png",
   },
   {
     title: "Project 2",
     description: "A brief description of Project 2 and the technologies used.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg",
   },
   {
     title: "Project 3",
     description: "A brief description of Project 3 and the technologies used.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg",
   },
   {
     title: "Project 4",
     description: "A brief description of Project 4 and the technologies used.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -46,13 +46,15 @@ export default function Projects() {
             transition={{ delay: index * 0.1, duration: 0.3 }}
             className="bg-[#181818] p-4 rounded-lg"
           >
-            <Image
-              src={project.image || "/placeholder.svg"}
-              alt={project.title}
-              width={300}
-              height={200}
-              className="rounded-lg mb-4"
-            />
+            <div className="relative w-full h-0 pb-[56.25%] mb-4">
+              <Image
+                src={project.image || "/placeholder.svg"}
+                alt={project.title}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </div>
             <h2 className="text-2xl font-semibold text-[#1DB954] mb-2">{project.title}</h2>
             <p className="text-gray-300">{project.description}</p>
           </motion.div>
@@ -61,4 +63,3 @@ export default function Projects() {
     </motion.div>
   )
 }
-

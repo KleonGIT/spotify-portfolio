@@ -27,7 +27,7 @@ export default function Home() {
         transition={{ staggerChildren: 0.3 }}
       >
         <motion.div
-          className="space-y-4"
+          className="space-y-4 flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -42,7 +42,7 @@ export default function Home() {
             height={300}
             className="rounded-lg"
           />
-          <p className="text-gray-300">
+          <p className="text-gray-300 text-justify max-w-lg">
             A Capstone project in my last year of college, The Grade Management
             System for St. Ignatius Technical College is a user-friendly,
             web-based platform designed to streamline the process of recording,
@@ -60,7 +60,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="space-y-4"
+          className="space-y-4 flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -68,7 +68,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold text-[#1DB954]">
             Latest Blog Post
           </h2>
-          <div className="bg-[#181818] p-4 rounded-lg">
+          <div className="bg-[#181818] p-4 rounded-lg max-w-lg">
             <h3 className="text-xl font-semibold mb-2">
               Watch me on Kick/iEulsPH
             </h3>
