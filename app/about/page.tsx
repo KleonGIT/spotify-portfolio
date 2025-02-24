@@ -40,12 +40,11 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="space-y-4"
         >
-          <p className="text-gray-300">
-            Hello! I'm [Your Name], a passionate web developer with a love for creating beautiful and functional
-            websites. With [X] years of experience in the field, I specialize in [Your Specialties, e.g., React,
-            Node.js, and responsive design].
+          <p className="text-gray-300">It&apos;s
+            Hello! I'm Kleon, a passionate web developer with a love for creating beautiful and functional
+            websites. With 2 years of experience in the field, I specialize in Web Development.
           </p>
-          <p className="text-gray-300">
+          <p className="text-gray-300">It&apos;s
             When I'm not coding, you can find me [Your Hobbies or Interests, e.g., exploring new coffee shops, hiking in
             the mountains, or playing the guitar]. I believe in continuous learning and always strive to stay up-to-date
             with the latest web technologies and best practices.

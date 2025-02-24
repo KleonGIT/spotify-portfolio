@@ -54,7 +54,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold text-[#1DB954]">Latest Blog Post</h2>
           <div className="bg-[#181818] p-4 rounded-lg">
             <h3 className="text-xl font-semibold mb-2">Title of Your Latest Blog Post</h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300">It&apos;s
               A short excerpt from your latest blog post. This could be about a recent project, a technology you've been
               learning, or your thoughts on web development trends!
             </p>
